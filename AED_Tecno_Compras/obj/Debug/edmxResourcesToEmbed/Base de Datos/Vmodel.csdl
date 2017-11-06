@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Decripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__IdCate__1273C1CD" FromRole="Categoria" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ModoPago" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Saldo" Type="Single" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Clave" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Bloqueado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IdClien__1920BF5C" FromRole="Cliente" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="IdFactura" />
+    </Key>
+    <Property Name="IdFactura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Total" Type="Single" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Codigo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IdCliente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Factura__IdClien__1920BF5C" FromRole="Factura" ToRole="Cliente" />
+    <NavigationProperty Name="ProductoEnFactura" Relationship="Self.FK__ProductoE__IdFac__1BFD2C07" FromRole="Factura" ToRole="ProductoEnFactura" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UrlFoto" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PrecioUnitario" Type="Single" Nullable="false" />
+    <Property Name="CantidadEnInventario" Type="Int32" Nullable="false" />
+    <Property Name="Descuento" Type="Single" />
+    <Property Name="FechaInicioDescuento" Type="DateTime" Precision="3" />
+    <Property Name="FechaFinDescuento" Type="DateTime" Precision="3" />
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Categoria" Relationship="Self.FK__Producto__IdCate__1273C1CD" FromRole="Producto" ToRole="Categoria" />
+    <NavigationProperty Name="ProductoEnFactura" Relationship="Self.FK__ProductoE__IdPro__1CF15040" FromRole="Producto" ToRole="ProductoEnFactura" />
+  </EntityType>
+  <EntityType Name="ProductoEnFactura">
+    <Key>
+      <PropertyRef Name="idProductoEnFactura" />
+    </Key>
+    <Property Name="idProductoEnFactura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdFactura" Type="Int32" Nullable="false" />
+    <Property Name="IdProducto" Type="Int32" Nullable="false" />
+    <Property Name="cantidadProducto" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__ProductoE__IdFac__1BFD2C07" FromRole="ProductoEnFactura" ToRole="Factura" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__ProductoE__IdPro__1CF15040" FromRole="ProductoEnFactura" ToRole="Producto" />
+  </EntityType>
+  <Association Name="FK__Producto__IdCate__1273C1CD">
+    <End Role="Categoria" Type="Self.Categoria" Multiplicity="1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Factura__IdClien__1920BF5C">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductoE__IdFac__1BFD2C07">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="ProductoEnFactura" Type="Self.ProductoEnFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IdFactura" />
+      </Principal>
+      <Dependent Role="ProductoEnFactura">
+        <PropertyRef Name="IdFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductoE__IdPro__1CF15040">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="ProductoEnFactura" Type="Self.ProductoEnFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="ProductoEnFactura">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PruebaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categoria" EntityType="Self.Categoria" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="ProductoEnFactura" EntityType="Self.ProductoEnFactura" />
+    <AssociationSet Name="FK__Producto__IdCate__1273C1CD" Association="Self.FK__Producto__IdCate__1273C1CD">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Factura__IdClien__1920BF5C" Association="Self.FK__Factura__IdClien__1920BF5C">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductoE__IdFac__1BFD2C07" Association="Self.FK__ProductoE__IdFac__1BFD2C07">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="ProductoEnFactura" EntitySet="ProductoEnFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductoE__IdPro__1CF15040" Association="Self.FK__ProductoE__IdPro__1CF15040">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="ProductoEnFactura" EntitySet="ProductoEnFactura" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
