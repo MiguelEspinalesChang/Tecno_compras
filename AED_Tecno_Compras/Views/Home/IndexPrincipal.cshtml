@@ -6,65 +6,26 @@
 
 <div class="items">
     <div class="container">
-        <div class="items-sec">
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    @*<img src="~/images/img1.jpg"  alt=""/>*@
-                    <img src="~/images/Productos/targeta-1.jpg" alt="" />
+        <div class="items-sec" >
+            <div class="col-md-3 feature-grid" ng-repeat="item in listaProducto">
+                <div>
+
+                    <img src="{{item.UrlFoto}}" alt="Foto Producto" />
                    
                     <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 12000</p>
-                        <span class="pric1"><del>Rs 18000</del></span>
-                        <span class="disc">[12% Off]</span>
+                        <h4>{{item.Nombre}}</h4>
+                        <p>C$ {{item.ValorConDescuento}}</p>
+                        <span class="pric1"><del>C$ {{item.PrecioUnitario}}</del></span>
+                        <span class="disc">[{{item.Descuento}} % de Oferta]</span>
                     </div>
                     <div class="viw">
-                        <a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                        <a href="/productos/detalleProducto/producto=?{{item.IdProducto}}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+                          </span>Ver</a>
                     </div>
-                </a>
+
+                </div>
             </div>
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    <img src="~/images/img2.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 10000</p>
-                        <span class="pric1"><del>Rs 14000</del></span>
-                        <span class="disc">[14% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 feature-grid">
-                <a href="#">
-                    <img src="~/images/img3.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 8500</p>
-                        <span class="pric1"><del>Rs 9500</del></span>
-                        <span class="disc">[10% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    <img src="~/images/img4.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 12000</p>
-                        <span class="pric1"><del>Rs 18000</del></span>
-                        <span class="disc">[12% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
+
             <div class="clearfix"></div>
         </div>
         <div class="items-sec btm-sec">
@@ -170,5 +131,5 @@
     </div>
 </div>
 
-<h2>IndexPrincipal</h2>
 
+<script src="~/js/TecnoScripts/indexPrincipal.js"></script>

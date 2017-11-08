@@ -235,6 +235,7 @@
     <Content Include="js\memenu.js" />
     <Content Include="js\responsiveslides.min.js" />
     <Content Include="js\simpleCart.min.js" />
+    <Content Include="js\TecnoScripts\indexPrincipal.js" />
     <Content Include="js\tether.min.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />

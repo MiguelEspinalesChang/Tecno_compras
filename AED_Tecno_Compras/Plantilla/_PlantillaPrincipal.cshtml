@@ -6,7 +6,7 @@
     <title> @*@ViewBag.Title*@</title>
 
     @*enlace del bootstrap*@
-<link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
 
     @*estilo del tema*@ 
     <link href="~/css/style.css" rel="stylesheet" />
@@ -198,12 +198,11 @@
         </div>
         <!---->
 
-        @*<script src="~/js/bootstrap.js"></script>*@
+        <script src="~/js/angular.min.js"></script>
 
-
-
-
+        <div ng-app="app" ng-controller="controller">
         @RenderBody()
+        </div>
 
         <div class="subscribe">
             <div class="container">
