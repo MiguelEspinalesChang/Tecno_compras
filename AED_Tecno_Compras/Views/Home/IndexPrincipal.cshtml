@@ -10,7 +10,7 @@
             <div class="col-md-3 feature-grid" ng-repeat="item in listaProducto">
                 <div>
 
-                    <img src="{{item.UrlFoto}}" alt="Foto Producto" />
+                    <img src="{{item.UrlFoto}}" alt="Foto Producto" class="img img-responsive"/>
                    
                     <div class="arrival-info">
                         <h4>{{item.Nombre}}</h4>
@@ -25,105 +25,32 @@
 
                 </div>
             </div>
-
-            <div class="clearfix"></div>
-        </div>
-        <div class="items-sec btm-sec">
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    <img src="~/images/img5.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 500</p>
-                        <span class="pric1"><del>Rs 650</del></span>
-                        <span class="disc">[8% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    <img src="~/images/img8.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 400</p>
-                        <span class="pric1"><del>Rs 750</del></span>
-                        <span class="disc">[12% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    <img src="~/images/img7.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 800</p>
-                        <span class="pric1"><del>Rs 1200</del></span>
-                        <span class="disc">[12% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 feature-grid">
-                <a href="product.html">
-                    <img src="~/images/img6.jpg" alt="" />
-                    <div class="arrival-info">
-                        <h4>Lighting #1</h4>
-                        <p>Rs 600</p>
-                        <span class="pric1"><del>Rs 1200</del></span>
-                        <span class="disc">[50% Off]</span>
-                    </div>
-                    <div class="viw">
-                        <a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-                    </div>
-                </a>
-            </div>
-            <div class="clearfix"></div>
         </div>
     </div>
 </div>
 
 <div class="offers">
     <div class="container">
-        <h3>End of Season Sale</h3>
+        <h3>Super ofertas del 70% o màs</h3>
         <div class="offer-grids">
-            <div class="col-md-6 grid-left">
-                <a href="#">
+            <div class="col-md-6 grid-left" ng-repeat="item in listaOfertas" >
+                <a href="/productos/detalleProducto/producto=?{{item.IdProducto}}" class="text-center">
                     <div class="offer-grid1">
                         <div class="ofr-pic">
-                            <img src="~/images/ofr2.jpeg" class="img-responsive" alt="" />
+                            <img src="{{item.UrlFoto}}" class="img-responsive" alt="foto producto" />
                         </div>
                         <div class="ofr-pic-info">
-                            <h4>Emergency Lights <br>& Led Bulds</h4>
-                            <span>UP TO 60% OFF</span>
-                            <p>Shop Now</p>
+                            <h4>{{item.Nombre}}</h4>
+                            <br />
+                            <h4>{{item.Descripcion}}</h4>
+                            <span>Aproveche el super descuento del %{{item.Descuento}}</span>
+                            <span>Oferta limitada</span>
                         </div>
                         <div class="clearfix"></div>
+                        <p class="text-center btn btn-primary btn-lg text-white"><i class="fa fa-eye"></i>Ver</p>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6 grid-right">
-                <a href="#">
-                    <div class="offer-grid2">
-                        <div class="ofr-pic-info2">
-                            <h4>Flat Discount</h4>
-                            <span>UP TO 30% OFF</span>
-                            <h5>Outdoor Gate Lights</h5>
-                            <p>Shop Now</p>
-                        </div>
-                        <div class="ofr-pic2">
-                            
-                            <img src="~/images/ofr3.jpg" class="img-responsive" alt="" />
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+
+                    
                 </a>
             </div>
             <div class="clearfix"></div>

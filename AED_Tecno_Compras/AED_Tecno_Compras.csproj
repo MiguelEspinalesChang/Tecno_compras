@@ -172,6 +172,10 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\Estilo.css" />
     <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="css\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\font-awesome-4.7.0\HELP-US-OUT.txt" />
     <Content Include="css\form.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\memenu.css" />
@@ -314,6 +318,39 @@
     <Content Include="Base de Datos\Vmodel.edmx.diagram">
       <DependentUpon>Vmodel.edmx</DependentUpon>
     </Content>
+    <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="css\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="css\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="css\font-awesome-4.7.0\less\core.less" />
+    <Content Include="css\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="css\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="css\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="css\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="css\font-awesome-4.7.0\less\list.less" />
+    <Content Include="css\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="css\font-awesome-4.7.0\less\path.less" />
+    <Content Include="css\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="css\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="css\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="css\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="css\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="css\font-awesome-4.7.0\scss\_variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

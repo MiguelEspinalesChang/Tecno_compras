@@ -3,6 +3,7 @@
 app.controller("controller", function ($scope, $http) {
 
     $scope.listaProducto = [];
+    $scope.listaOfertas = [];
 
     $http.get("/Home/ObtenerProductosHome")
     .then(function (response) {
@@ -11,5 +12,13 @@ app.controller("controller", function ($scope, $http) {
 
 
     });
+
+    $http.get("/Home/ObtenerOfertas")
+    .then(function (response) {
+
+     $scope.listaOfertas = response.data.listaOfertas;
+
+
+ });
 
 });
