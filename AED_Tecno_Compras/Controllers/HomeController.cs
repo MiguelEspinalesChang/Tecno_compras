@@ -55,7 +55,7 @@ namespace AED_Tecno_Compras.Controllers
         {
             //where item.Descuento > 69 && item.Descuento < 100
             var consulta = (from item in dataContext.Producto
-
+                            where item.Descuento > 69 && item.Descuento < 100
                             select item)
                             .ToList();
 
