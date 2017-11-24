@@ -20,7 +20,7 @@ namespace AED_Tecno_Compras.Controllers
         public JsonResult ObtenerProductosHome()
         {
             var consulta = (from item in dataContext.Producto
-                            where item.Descuento > 0 && item.Descuento < 70
+                            //where item.Descuento > 0 && item.Descuento < 70
                             select item)
                             .ToList();
 
