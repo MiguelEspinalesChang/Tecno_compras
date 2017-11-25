@@ -442,6 +442,6 @@ C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\es\System.Web.Webpage
 C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\es\System.Web.Helpers.resources.dll
 C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\es\System.Web.Mvc.resources.dll
-C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\obj\Debug\AED_Tecno_Compras.csprojResolveAssemblyReference.cache
 C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\obj\Debug\AED_Tecno_Compras.dll
 C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\obj\Debug\AED_Tecno_Compras.pdb
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\obj\Debug\AED_Tecno_Compras.csprojResolveAssemblyReference.cache

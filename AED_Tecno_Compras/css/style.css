@@ -120,11 +120,11 @@ h1.b1,h2.b2,h3.b3 {
 .logo h1 a{
 	color: #F1F1F1;
     font-family: 'Dosis-Medium';
-    font-size: 1.3em;
+    font-size:              1.3em;
     font-weight: 100;
     padding: 0.5em 1.3em;
 	text-decoration:none;
-background:#ed645c;	
+background:#005cb2;	
 display:inline-block;
 }
 .logo h1 a:hover{
@@ -462,7 +462,7 @@ span.disc {
 }
 /*----subscribe---*/
 .subscribe{
-	background:#ed645c;
+	background:#005cb2;
 	text-align:center;
 	padding:2em 0;
 }
@@ -539,7 +539,7 @@ ul.nav-bottom li a {
     display: inline-block;
 }
 ul.nav-bottom li a:hover{
-    color: #ed645c;
+    color: ;
 }
 ul.nav-bottom li:nth-child(1){
 	margin:0;
@@ -710,7 +710,7 @@ background-position:-167px -36px;
 }
 .product-grid:hover {
 	z-index: 1;
-	border-bottom:2px solid #ed645c;
+	border-bottom:2px solid #005cb2;
 }
 .more-product-info span {
 	color:#fff;
@@ -1699,7 +1699,7 @@ display:inline-block;
 text-decoration:underline;
 font-size:0.85em;
 font-weight:400;
-color:#7b7a7a;
+color:#005cb2;
 }
 a.acount-btn {
   display:inline-block;
