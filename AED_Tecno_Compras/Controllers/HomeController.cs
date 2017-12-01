@@ -20,7 +20,7 @@ namespace AED_Tecno_Compras.Controllers
         public JsonResult ObtenerProductosHome()
         {
             var consulta = (from item in dataContext.Producto
-                            //where item.Descuento > 0 && item.Descuento < 70
+                            where item.Descuento > 0 && item.Descuento < 69
                             select item)
                             .ToList();
 
@@ -55,7 +55,7 @@ namespace AED_Tecno_Compras.Controllers
         {
             //where item.Descuento > 69 && item.Descuento < 100
             var consulta = (from item in dataContext.Producto
-                            where item.Descuento > 69 && item.Descuento < 100
+                            where item.Descuento >= 70 && item.Descuento < 100
                             select item)
                             .ToList();
 

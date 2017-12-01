@@ -278,6 +278,7 @@
       <DependentUpon>Vmodel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\SugerenciaController.cs" />
     <Compile Include="Global.asax.cs">
@@ -352,6 +353,7 @@
     <Content Include="css\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="css\font-awesome-4.7.0\scss\_variables.scss" />
     <Content Include="Plantilla\_PlantillaVacia.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
