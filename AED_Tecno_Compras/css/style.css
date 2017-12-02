@@ -487,6 +487,7 @@ span.disc {
 }
 .subscribe form input[type="submit"]{
 	outline:none;
+    background-color:#00a0dc;
 	border:1px solid #fff;
 	width:20%;
 	padding:0.55em;
@@ -1691,7 +1692,7 @@ display:inline-block;
 -o-transition: 0.5s all;
 }
 .log form input[type="submit"]:hover,a.acount-btn:hover{
-	background:#ed645c;
+	background:#4DD0E1;
 	color:#fff;
 	text-decoration:none;
 }
@@ -1839,7 +1840,7 @@ label {
 	-webkit-transition: 0.5s ease;	
 }
 .registration_form input[type="submit"]:hover{
-	background:#ed645c;
+	background:#4DD0E1;
 }
 .terms{
 	text-decoration:underline;
