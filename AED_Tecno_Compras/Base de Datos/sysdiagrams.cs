@@ -12,20 +12,12 @@ namespace AED_Tecno_Compras.Base_de_Datos
     using System;
     using System.Collections.Generic;
     
-    public partial class Factura
+    public partial class sysdiagrams
     {
-        public Factura()
-        {
-            this.ProductoEnFactura = new HashSet<ProductoEnFactura>();
-        }
-    
-        public int IdFactura { get; set; }
-        public float Total { get; set; }
-        public System.DateTime Fecha { get; set; }
-        public string Codigo { get; set; }
-        public int IdCliente { get; set; }
-    
-        public virtual ICollection<ProductoEnFactura> ProductoEnFactura { get; set; }
-        public virtual Cliente Cliente { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

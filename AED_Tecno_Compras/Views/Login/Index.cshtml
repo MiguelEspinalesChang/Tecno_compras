@@ -1,33 +1,34 @@
 ﻿
 @{
-ViewBag.Title = "Index";
-Layout = "~/Plantilla/_PlantillaVacia.cshtml";
+    ViewBag.Title = "Index";
+    Layout = "~/Plantilla/_PlantillaVacia.cshtml";
 }
 
 
 <div class="login_sec">
     <div class="container">
-      
+
 
         <h2><br /> Iniciar sesión</h2>
         <div class="col-md-6 log">
-            <p>Bienvenido, por favor ingrese lo siguiente para continuar.</p>
-            <p>Si ya has iniciado sesión con nosotros,<span>haga clic aquí</span></p>
             <form>
-                <h5>Nombre de usuario</h5>
-                <input type="text" value="">
-                <h5>Password</h5>
-                <input type="password" value="">
-                <input type="submit" value="Iniciar sesión">
-                <a class="acount-btn" href="/CreCuenta/Index">Crea una cuenta</a>
-            </form>
-            <a href="#">Se te olvidó tu contraseña ?</a>
-
+                <p>Bienvenido, por favor ingrese lo siguiente para continuar.</p>
+                <h{5>
+                    Nombre de usuario</h5>
+                    <input type="text" name="userName" ng-model="user">
+                    <h5>Password</h5>
+                    <input type="password" ng-model="passw" name="passw">
+                    <input type="button" value="Iniciar sesión" ng-click="iniciar()">
+        </form>
+           
+            
         </div>
 
         <div class="clearfix"></div>
     </div>
 </div>
+
+<script src="~/js/TecnoScripts/Login.js"></script>
 
 <script>
     $("#liLogin").addClass("active");

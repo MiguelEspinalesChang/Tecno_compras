@@ -28,6 +28,7 @@ namespace AED_Tecno_Compras.Base_de_Datos
         public string Correo { get; set; }
         public string Clave { get; set; }
         public bool Bloqueado { get; set; }
+        public string pass { get; set; }
     
         public virtual ICollection<Factura> Factura { get; set; }
     }

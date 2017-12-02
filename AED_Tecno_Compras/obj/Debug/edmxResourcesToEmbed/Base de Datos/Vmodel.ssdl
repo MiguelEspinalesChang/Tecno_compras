@@ -21,6 +21,7 @@
     <Property Name="Correo" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="Clave" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="Bloqueado" Type="bit" Nullable="false" />
+    <Property Name="pass" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <EntityType Name="Factura">
     <Key>
@@ -55,6 +56,16 @@
     <Property Name="IdFactura" Type="int" Nullable="false" />
     <Property Name="IdProducto" Type="int" Nullable="false" />
     <Property Name="cantidadProducto" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <Association Name="FK__Factura__IdClien__1920BF5C">
     <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
@@ -110,6 +121,7 @@
     <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductoEnFactura" EntityType="Self.ProductoEnFactura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK__Factura__IdClien__1920BF5C" Association="Self.FK__Factura__IdClien__1920BF5C">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Factura" EntitySet="Factura" />

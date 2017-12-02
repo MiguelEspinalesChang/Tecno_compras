@@ -4,13 +4,28 @@
     Layout = "~/Plantilla/_PlantillaPrincipal.cshtml";
 }
 
+<style>
+    .img-producto{
+        height: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .grid-ofertas{
+        max-height: 260px !important;
+        overflow: auto !important;
+    }
+    .grid-lef{
+        margin-bottom:10px !important;
+        margin-top: 5px !important;
+    }
+</style>
+
 <div class="items">
     <div class="container">
         <div class="items-sec" >
             <div class="col-md-3 feature-grid" ng-repeat="item in listaProducto">
-                <div>
 
-                    <img src="{{item.UrlFoto}}" alt="Foto Producto" class="img img-responsive"/>
+                    <img src="{{item.UrlFoto}}" alt="Foto Producto" class="img img-responsive img-producto"/>
                    
                     <div class="arrival-info">
                         <h4>{{item.Nombre}}</h4>
@@ -23,7 +38,6 @@
                           </span>Ver</a>
                     </div>
 
-                </div>
             </div>
         </div>
     </div>
@@ -33,13 +47,13 @@
     <div class="container">
         <h3>Super ofertas del 70% o màs</h3>
         <div class="offer-grids">
-            <div class="col-md-6 grid-left" ng-repeat="item in listaOfertas" >
+            <div class="col-md-6 grid-left " ng-repeat="item in listaOfertas" >
                 <a href="/productos/detalleProducto/producto=?{{item.IdProducto}}" class="text-center">
                     <div class="offer-grid1">
                         <div class="ofr-pic">
                             <img src="{{item.UrlFoto}}" class="img-responsive" alt="foto producto" />
                         </div>
-                        <div class="ofr-pic-info">
+                        <div class="ofr-pic-info grid-ofertas">
                             <h4>{{item.Nombre}}</h4>
                             <br />
                             <h4>{{item.Descripcion}}</h4>

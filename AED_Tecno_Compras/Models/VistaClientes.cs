@@ -17,6 +17,7 @@ namespace AED_Tecno_Compras.Models
         public string Correo { get; set; }
         public string Clabe { get; set; }
         public Boolean Bloqueado { get; set; }
+        public string Pass { get; set; }
       
         
     }

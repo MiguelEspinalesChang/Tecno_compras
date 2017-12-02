@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\HP004\Desktop\Tecno Compras\AED_Tecno_Compras\AED_Tecno_Compras\Base de Datos\Vmodel.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\Chang-PC\Desktop\Tecno_compras\AED_Tecno_Compras\Base de Datos\Vmodel.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.
