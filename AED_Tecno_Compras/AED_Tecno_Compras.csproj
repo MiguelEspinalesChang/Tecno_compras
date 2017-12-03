@@ -258,6 +258,7 @@
     <Content Include="js\simpleCart.min.js" />
     <Content Include="js\TecnoScripts\indexPrincipal.js" />
     <Content Include="js\TecnoScripts\Login.js" />
+    <Content Include="js\TecnoScripts\productos.js" />
     <Content Include="js\tether.min.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -378,6 +379,7 @@
     <Content Include="Plantilla\_PlantillaVacia.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\CreCuenta\Index.cshtml" />
+    <Content Include="Views\Productos\Detalle.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -602,3 +602,11 @@ C:\Users\Chang-PC\Desktop\Tecno_compras\AED_Tecno_Compras\bin\Newtonsoft.Json.xm
 C:\Users\Chang-PC\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Net.Http.Formatting.xml
 C:\Users\Chang-PC\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.xml
 C:\Users\Chang-PC\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.WebHost.xml
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\Newtonsoft.Json.dll
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Net.Http.Formatting.dll
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.dll
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.WebHost.dll
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\Newtonsoft.Json.xml
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Net.Http.Formatting.xml
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.xml
+E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.WebHost.xml

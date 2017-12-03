@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Detalle";
+    Layout = "~/Plantilla/_PlantillaVacia.cshtml";
+}
+
+
+@{
+    if (ViewBag.producto == false)
+    {
+        <h1 style="text-align:center; margin-top:50px">PRODUCTO NO ENCONTRADO</h1>
+    }
+    else
+    {
+        <div>
+
+
+            <img src="@ViewBag.producto.UrlFoto"/>
+
+
+        </div>
+    }
+}
+

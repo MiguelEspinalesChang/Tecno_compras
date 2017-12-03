@@ -19,25 +19,24 @@ namespace AED_Tecno_Compras.Controllers
             return View();
         }
 
-        public JsonResult ObtenerUsuario(string userName, string passw)
+        public JsonResult Ingresar(string userName, string passw)
         {
-          var consulta = (from usuario in dataContext.Cliente
-                         where usuario.NombreUsuario == "Gintoki" &&  usuario.pass == "12345"
-                         select usuario)
-                          .ToList();
+            if (string.IsNullOrEmpty(userName))
+                userName = userName.ToLower();
 
-            return Json(consulta, JsonRequestBehavior.AllowGet);
+            var consulta = (from usuario in dataContext.Cliente
+                            where usuario.NombreUsuario.ToLower() == userName && usuario.pass == passw
+                            select usuario).FirstOrDefault();
+
+            if(consulta != null)
+            {
+                return Json(new { user = userName, passw = passw }, JsonRequestBehavior.AllowGet);
+            }
+            else
+                return Json(new { error = true }, JsonRequestBehavior.AllowGet);
 
         }
 
-        [HttpPost]
-        public ActionResult Ingresar(string userName, string passw)
-        {
-            
-
-
-           return RedirectToAction("Index", "Home");
-        }
 
       
     }

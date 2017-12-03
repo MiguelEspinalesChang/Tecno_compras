@@ -11,6 +11,11 @@
 
         <h2><br /> Iniciar sesión</h2>
         <div class="col-md-6 log">
+            
+            <div class="alert alert-danger" ng-show="errorLogin">
+                <strong>ERROR EN EL LOGIN!</strong> Los datos ingresados son incorrectos.
+            </div>
+
             <form>
                 <p>Bienvenido, por favor ingrese lo siguiente para continuar.</p>
                 <h{5>
@@ -18,8 +23,8 @@
                     <input type="text" name="userName" ng-model="user">
                     <h5>Password</h5>
                     <input type="password" ng-model="passw" name="passw">
-                    <input type="button" value="Iniciar sesión" ng-click="iniciar()">
-        </form>
+                    <input type="button" class="btn btn-primary" value="Iniciar sesión" ng-click="iniciar()" ng-disabled="peticion">
+            </form>
            
             
         </div>
