@@ -610,3 +610,11 @@ E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\Newtonsoft.Json.xml
 E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Net.Http.Formatting.xml
 E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.xml
 E:\AppLoaded\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.WebHost.xml
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\Newtonsoft.Json.dll
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Net.Http.Formatting.dll
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.dll
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.WebHost.dll
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\Newtonsoft.Json.xml
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Net.Http.Formatting.xml
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.xml
+C:\Users\HP004\Desktop\Tecno_compras\AED_Tecno_Compras\bin\System.Web.Http.WebHost.xml

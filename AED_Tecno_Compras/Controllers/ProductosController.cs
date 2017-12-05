@@ -17,40 +17,40 @@ namespace AED_Tecno_Compras.Controllers
             return View("");
         }
 
-        [HttpGet]
-        public ActionResult detalleProducto(string token)
+        //[HttpGet]
+        public ActionResult detalleProducto(/*string token*/)
         {
 
 
-            var consulta = (from item in dataContext.Producto
-                            where item.IdProducto == Convert.ToInt32(token)
-                            select item).FirstOrDefault();
+            //var consulta = (from item in dataContext.Producto
+            //                where item.IdProducto == Convert.ToInt32(token)
+            //                select item).FirstOrDefault();
 
 
-            if (consulta == null)
-            {
-                ViewBag.producto = false;
-            }
-            else
-            {
-                VistaProducto productoTemp = new VistaProducto();
+            //if (consulta == null)
+            //{
+            //    ViewBag.producto = false;
+            //}
+            //else
+            //{
+            //    VistaProducto productoTemp = new VistaProducto();
 
 
-                productoTemp.IdProducto = consulta.IdProducto;
-                productoTemp.Nombre = consulta.Nombre;
-                productoTemp.Descripcion = consulta.Descripcion;
-                productoTemp.UrlFoto = consulta.UrlFoto;
-                productoTemp.PrecioUnitario = consulta.PrecioUnitario;
-                productoTemp.CantidadEnInventario = consulta.CantidadEnInventario;
-                productoTemp.Descuento = consulta.Descuento;
-                productoTemp.FechaInicioDescuento = consulta.FechaInicioDescuento;
-                productoTemp.FechaFinDescuento = consulta.FechaFinDescuento;
-                productoTemp.IdCategoria = consulta.IdCategoria;
-                productoTemp.ValorConDescuento = (consulta.Descuento != null) ? consulta.PrecioUnitario - ((consulta.PrecioUnitario * consulta.Descuento) / 100) : consulta.PrecioUnitario;
+            //    productoTemp.IdProducto = consulta.IdProducto;
+            //    productoTemp.Nombre = consulta.Nombre;
+            //    productoTemp.Descripcion = consulta.Descripcion;
+            //    productoTemp.UrlFoto = consulta.UrlFoto;
+            //    productoTemp.PrecioUnitario = consulta.PrecioUnitario;
+            //    productoTemp.CantidadEnInventario = consulta.CantidadEnInventario;
+            //    productoTemp.Descuento = consulta.Descuento;
+            //    productoTemp.FechaInicioDescuento = consulta.FechaInicioDescuento;
+            //    productoTemp.FechaFinDescuento = consulta.FechaFinDescuento;
+            //    productoTemp.IdCategoria = consulta.IdCategoria;
+            //    productoTemp.ValorConDescuento = (consulta.Descuento != null) ? consulta.PrecioUnitario - ((consulta.PrecioUnitario * consulta.Descuento) / 100) : consulta.PrecioUnitario;
 
 
-                ViewBag.producto = productoTemp;
-            }
+            //    ViewBag.producto = productoTemp;
+            //}
 
 
             return View("detalle");

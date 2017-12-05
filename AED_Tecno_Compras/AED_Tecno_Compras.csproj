@@ -236,6 +236,7 @@
     <Content Include="images\p7.jpg" />
     <Content Include="images\p8.jpg" />
     <Content Include="images\p9.jpg" />
+    <Content Include="images\Productos\pccc.jpg" />
     <Content Include="images\Productos\targeta-1.jpg" />
     <Content Include="images\si.jpg" />
     <Content Include="images\si2.jpg" />
@@ -301,10 +302,12 @@
       <DependentUpon>Vmodel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CreCuentaController.cs" />
+    <Compile Include="Controllers\DetalleProductoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\SugerenciaController.cs" />
+    <Compile Include="Controllers\VistaProductoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -380,6 +383,8 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\CreCuenta\Index.cshtml" />
     <Content Include="Views\Productos\Detalle.cshtml" />
+    <Content Include="Views\DetalleProducto\Index.cshtml" />
+    <Content Include="Views\VistaProducto\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
